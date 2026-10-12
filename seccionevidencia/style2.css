@@ -1,0 +1,122 @@
+/* Header*/
+.cabeza{
+    background-color: #7ef286;
+    text-align: center;
+    margin: 0;               /* O el margen que prefieras */
+    padding: 20px;
+    font-family: fantasy;
+    font-weight: 200;
+}
+
+nav {
+    background-color: cadetblue;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+nav a {
+    color:rgb(163, 54, 54);
+    text-decoration: none;
+    font-weight: 500;
+    font-family :fantasy;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    padding: 11px 10px;
+}
+nav a:hover {
+    color: #3B82F6; /* Al pasar el mouse, cambiará de negro a azul de forma gradual en 0.9 segundos */
+}
+
+nav div{
+    background-color: none;
+}
+
+
+/* Galerria*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef4ef;
+    font-family: sans-serif;
+}
+
+/* Estilos del Título principal */
+
+
+
+/* Contenedor de la Galería (Grid) */
+.img-gallery {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+/* Efecto hover en las imágenes */
+.img-gallery img:hover {
+    transform: scale(1.2);
+}
+
+/* Contenedor Modal de Pantalla Completa */
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /* Se activa con JavaScript */
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Botón de cierre (X) en el modal */
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Galerria*/
+div img{
+    width: 900px;
+}
+
+div button{
+    background-color: #7ef286;
+}
