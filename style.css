@@ -1,0 +1,120 @@
+header h1 {
+    background-color: #bbd1f4;
+    text-align: center;      /* Centra el texto correctamente */
+    margin: 0;               /* O el margen que prefieras */
+    padding: 20px;           /* Un padding normal y equilibrado */
+    font-family: fantasy;
+    font-weight: 200;
+}
+/* --------------------------------------------*/
+nav{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /*sirve para que no se deforme la imagen */
+}
+
+nav a {
+    color:rgb(163, 54, 54);
+    text-decoration: none;
+    font-weight: 500;
+    font-family :fantasy;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    padding: 11px 10px;
+}
+nav a:hover {
+    color: #3B82F6; /* Al pasar el mouse, cambiará de negro a azul de forma gradual en 0.9 segundos */
+}
+
+nav div{
+    background-color: none;
+}
+/* --------------------------------------------*/
+aside{
+    background-color: aquamarine;
+    height: 540px;
+    width: 320px;
+}
+
+aside img {
+    width: 320px;
+    height: 480px;
+    margin: 1%;
+}
+/*
+.contenedor1{
+    display: flex;
+    justify-content:space-between; 
+    gap: 10px;                 
+    padding: 20px;
+    text-align: center;
+}
+*/
+section{
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.linea-decorativa {
+    border: none;
+    height: 1px;
+    background-color: #0EA5E9; /* Color azul estilo turquesa */
+    width: 40%;                /* Ancho parcial para que se vea elegante y corta */
+    margin: 0 auto 10px auto;  /* Centra la línea horizontalmente y deja espacio abajo */
+}
+/* --------------------------------------------*/
+.linea-decorativa2 {
+    border: none;
+    height: 1px;
+    background-color: #0EA5E9; /* Color azul estilo turquesa */
+    width: 70%;                /* Ancho parcial para que se vea elegante y corta */
+    margin: 0 auto 10px auto;  /* Centra la línea horizontalmente y deja espacio abajo */
+}
+
+h1{
+    text-align: center;
+}
+
+/* Limita el ancho máximo de todo el carrusel en la pantalla */
+.carousel {
+    max-width: 600px;  /* Puedes cambiar este valor (ej. 500px, 800px) según lo que prefieras */
+    margin: 0 auto;    /* Esto centra el carrusel automáticamente */
+}
+
+/* Controla la altura fija de las imágenes dentro del carrusel */
+.carousel-inner img {
+    height: 400px;     /* Ajusta los píxeles de alto que quieras que tengan */
+    object-fit: cover; /* Evita que la imagen se estire o deforme, recortando los excedentes con elegancia */
+}
+.carousel-item h3{
+    color: rgb(242, 253, 26);
+}
+.carousel-item p{
+    color: rgb(255, 255, 24);
+}
+
+.card {
+    max-width: 350px;  /* Controlas el ancho de la tarjeta */
+    border-radius: 15px; /* Redondeas las esquinas */
+    overflow: hidden;
+    margin: 10px; /* El "auto" a los lados empuja la tarjeta exactamente hacia el centro */
+}
+
+.card img {
+    height: 300px;   
+    padding: 20px;  /* Controlas la altura de la imagen de la tarjeta */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Hacemos el título más pequeño en móviles */
+    }
+}
