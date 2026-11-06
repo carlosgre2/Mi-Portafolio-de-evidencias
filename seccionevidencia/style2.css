@@ -132,3 +132,73 @@ div img{
 div button{
     background-color: #7ef286;
 }
+
+.img-gallery2 {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.img-gallery2 img {
+    width: 90%;
+    cursor: pointer;
+    transition: transform 1s;
+}
+/* CARRUCEL*/
+.linea-decorativa {
+    border: none;
+    height: 1px;
+    background-color: #0EA5E9; /* Color azul estilo turquesa */
+    width: 40%;                /* Ancho parcial para que se vea elegante y corta */
+    margin: 0 auto 10px auto;  /* Centra la línea horizontalmente y deja espacio abajo */
+}
+/* --------------------------------------------*/
+.linea-decorativa2 {
+    border: none;
+    height: 1px;
+    background-color: #0EA5E9; /* Color azul estilo turquesa */
+    width: 70%;                /* Ancho parcial para que se vea elegante y corta */
+    margin: 0 auto 10px auto;  /* Centra la línea horizontalmente y deja espacio abajo */
+}
+
+h1{
+    text-align: center;
+}
+
+/* Limita el ancho máximo de todo el carrusel en la pantalla */
+.carousel {
+    max-width: 600px;  /* Puedes cambiar este valor (ej. 500px, 800px) según lo que prefieras */
+    margin: 0 auto;    /* Esto centra el carrusel automáticamente */
+}
+
+/* Controla la altura fija de las imágenes dentro del carrusel */
+.carousel-inner img {
+    height: 400px;     /* Ajusta los píxeles de alto que quieras que tengan */
+    object-fit: cover; /* Evita que la imagen se estire o deforme, recortando los excedentes con elegancia */
+}
+.carousel-item h3{
+    color: rgb(242, 253, 26);
+}
+.carousel-item p{
+    color: rgb(255, 255, 24);
+}
+
+.card {
+    max-width: 350px;  /* Controlas el ancho de la tarjeta */
+    border-radius: 15px; /* Redondeas las esquinas */
+    overflow: hidden;
+    margin: 10px; /* El "auto" a los lados empuja la tarjeta exactamente hacia el centro */
+}
+
+.card img {
+    height: 300px;   
+    padding: 20px;  /* Controlas la altura de la imagen de la tarjeta */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Hacemos el título más pequeño en móviles */
+    }
+}
